@@ -133,10 +133,10 @@
 			isa = PBXGroup;
 			children = (
 				A3170C971CAFC73A00D887A4 /* 登录 */,
-				A3170C981CAFC73A00D887A4 /* 动态 */,
-				A3170C991CAFC73A00D887A4 /* 好友 */,
-				A3170C9A1CAFC73A00D887A4 /* 我的 */,
 				A3170C9B1CAFC73A00D887A4 /* 消息 */,
+				A3170C991CAFC73A00D887A4 /* 好友 */,
+				A3170C981CAFC73A00D887A4 /* 动态 */,
+				A3170C9A1CAFC73A00D887A4 /* 我的 */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -537,6 +537,7 @@
 				A3170C8F1CAFC61500D887A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3170C901CAFC61500D887A4 /* Build configuration list for PBXNativeTarget "wechatTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +546,7 @@
 				A3170C921CAFC61500D887A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3170C931CAFC61500D887A4 /* Build configuration list for PBXNativeTarget "wechatUITests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +555,7 @@
 				A3170C951CAFC61500D887A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
