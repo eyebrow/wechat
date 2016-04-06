@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7594A0111CB522A3000D6DD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A0101CB522A3000D6DD3 /* LoginViewController.swift */; };
+		7594A0131CB522CF000D6DD3 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A0121CB522CF000D6DD3 /* MessagesViewController.swift */; };
+		7594A0151CB522E2000D6DD3 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A0141CB522E2000D6DD3 /* FriendsViewController.swift */; };
+		7594A0171CB522F9000D6DD3 /* NewMomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A0161CB522F9000D6DD3 /* NewMomentViewController.swift */; };
+		7594A0191CB52315000D6DD3 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A0181CB52315000D6DD3 /* MyPageViewController.swift */; };
 		A3170C661CAFC61500D887A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3170C651CAFC61500D887A4 /* AppDelegate.swift */; };
 		A3170C681CAFC61500D887A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3170C671CAFC61500D887A4 /* ViewController.swift */; };
 		A3170C6B1CAFC61500D887A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3170C691CAFC61500D887A4 /* Main.storyboard */; };
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7594A0101CB522A3000D6DD3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7594A0121CB522CF000D6DD3 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		7594A0141CB522E2000D6DD3 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		7594A0161CB522F9000D6DD3 /* NewMomentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMomentViewController.swift; sourceTree = "<group>"; };
+		7594A0181CB52315000D6DD3 /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		A3170C621CAFC61500D887A4 /* wechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3170C651CAFC61500D887A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3170C671CAFC61500D887A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +86,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7594A00A1CB5226C000D6DD3 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				7594A00F1CB5226C000D6DD3 /* 登录 */,
+				7594A00E1CB5226C000D6DD3 /* 消息 */,
+				7594A00C1CB5226C000D6DD3 /* 好友 */,
+				7594A00B1CB5226C000D6DD3 /* 动态 */,
+				7594A00D1CB5226C000D6DD3 /* 我 */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		7594A00B1CB5226C000D6DD3 /* 动态 */ = {
+			isa = PBXGroup;
+			children = (
+				7594A0161CB522F9000D6DD3 /* NewMomentViewController.swift */,
+			);
+			path = "动态";
+			sourceTree = "<group>";
+		};
+		7594A00C1CB5226C000D6DD3 /* 好友 */ = {
+			isa = PBXGroup;
+			children = (
+				7594A0141CB522E2000D6DD3 /* FriendsViewController.swift */,
+			);
+			path = "好友";
+			sourceTree = "<group>";
+		};
+		7594A00D1CB5226C000D6DD3 /* 我 */ = {
+			isa = PBXGroup;
+			children = (
+				7594A0181CB52315000D6DD3 /* MyPageViewController.swift */,
+			);
+			path = "我";
+			sourceTree = "<group>";
+		};
+		7594A00E1CB5226C000D6DD3 /* 消息 */ = {
+			isa = PBXGroup;
+			children = (
+				7594A0121CB522CF000D6DD3 /* MessagesViewController.swift */,
+			);
+			path = "消息";
+			sourceTree = "<group>";
+		};
+		7594A00F1CB5226C000D6DD3 /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				7594A0101CB522A3000D6DD3 /* LoginViewController.swift */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
 		A3170C591CAFC61500D887A4 = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +161,7 @@
 		A3170C641CAFC61500D887A4 /* wechat */ = {
 			isa = PBXGroup;
 			children = (
-				A3170C961CAFC6D100D887A4 /* class */,
+				7594A00A1CB5226C000D6DD3 /* class */,
 				A3170C651CAFC61500D887A4 /* AppDelegate.swift */,
 				A3170C671CAFC61500D887A4 /* ViewController.swift */,
 				A3170C691CAFC61500D887A4 /* Main.storyboard */,
@@ -127,53 +189,6 @@
 				A3170C8A1CAFC61500D887A4 /* Info.plist */,
 			);
 			path = wechatUITests;
-			sourceTree = "<group>";
-		};
-		A3170C961CAFC6D100D887A4 /* class */ = {
-			isa = PBXGroup;
-			children = (
-				A3170C971CAFC73A00D887A4 /* 登录 */,
-				A3170C9B1CAFC73A00D887A4 /* 消息 */,
-				A3170C991CAFC73A00D887A4 /* 好友 */,
-				A3170C981CAFC73A00D887A4 /* 动态 */,
-				A3170C9A1CAFC73A00D887A4 /* 我的 */,
-			);
-			path = class;
-			sourceTree = "<group>";
-		};
-		A3170C971CAFC73A00D887A4 /* 登录 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "登录";
-			sourceTree = "<group>";
-		};
-		A3170C981CAFC73A00D887A4 /* 动态 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "动态";
-			sourceTree = "<group>";
-		};
-		A3170C991CAFC73A00D887A4 /* 好友 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "好友";
-			sourceTree = "<group>";
-		};
-		A3170C9A1CAFC73A00D887A4 /* 我的 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "我的";
-			sourceTree = "<group>";
-		};
-		A3170C9B1CAFC73A00D887A4 /* 消息 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "消息";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,9 +325,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7594A0131CB522CF000D6DD3 /* MessagesViewController.swift in Sources */,
+				7594A0111CB522A3000D6DD3 /* LoginViewController.swift in Sources */,
 				A3170C681CAFC61500D887A4 /* ViewController.swift in Sources */,
 				A3170C661CAFC61500D887A4 /* AppDelegate.swift in Sources */,
+				7594A0151CB522E2000D6DD3 /* FriendsViewController.swift in Sources */,
+				7594A0171CB522F9000D6DD3 /* NewMomentViewController.swift in Sources */,
 				A3170C6E1CAFC61500D887A4 /* wechat.xcdatamodeld in Sources */,
+				7594A0191CB52315000D6DD3 /* MyPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
