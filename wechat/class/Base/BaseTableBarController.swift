@@ -13,23 +13,30 @@ class BaseTableBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self .setup()
         // Do any additional setup after loading the view.
     }
     
     func setup() {
         let titleArray:NSArray = ["消息","好友","发现","我"]
         
-        let viewControllerArray = [MessagesViewController(),FriendsViewController(),NewMomentViewController(),MyPageViewController()]
+        let viewControllerArray = [MessagesViewController(),
+                                   FriendsViewController(),
+                                   NewMomentViewController(),
+                                   MyPageViewController()
+        ]
         
         let navArray = NSMutableArray()
         for (index, controller) in viewControllerArray.enumerate() {
             
-            controller.tabBarItem!.title = titleArray.objectAtIndex(index) as! String
+            controller.tabBarItem!.title = titleArray.objectAtIndex(index) as? String
             
+            let navigationController = UINavigationController(rootViewController: controller)
             
+            navArray.addObject(navigationController)
         }
         
-        
+        self.viewControllers = navArray.mutableCopy() as! [UINavigationController]
     }
 
     override func didReceiveMemoryWarning() {

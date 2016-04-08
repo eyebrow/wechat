@@ -15,6 +15,7 @@
 		7594A0831CB770FB000D6DD3 /* BaseTableBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A0821CB770FB000D6DD3 /* BaseTableBarController.swift */; };
 		7594A0871CB78D1D000D6DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7594A0851CB78D1D000D6DD3 /* Assets.xcassets */; };
 		7594A0881CB78D1D000D6DD3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7594A0861CB78D1D000D6DD3 /* Info.plist */; };
+		7594A0A21CB793A8000D6DD3 /* wechatApplicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A0A11CB793A8000D6DD3 /* wechatApplicationManager.swift */; };
 		A3170C661CAFC61500D887A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3170C651CAFC61500D887A4 /* AppDelegate.swift */; };
 		A3170C681CAFC61500D887A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3170C671CAFC61500D887A4 /* ViewController.swift */; };
 		A3170C6B1CAFC61500D887A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3170C691CAFC61500D887A4 /* Main.storyboard */; };
@@ -50,6 +51,8 @@
 		7594A0821CB770FB000D6DD3 /* BaseTableBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableBarController.swift; sourceTree = "<group>"; };
 		7594A0851CB78D1D000D6DD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7594A0861CB78D1D000D6DD3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7594A0A11CB793A8000D6DD3 /* wechatApplicationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wechatApplicationManager.swift; sourceTree = "<group>"; };
+		7594A0A41CB7946D000D6DD3 /* wechat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wechat-Bridging-Header.h"; sourceTree = "<group>"; };
 		A3170C621CAFC61500D887A4 /* wechat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wechat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3170C651CAFC61500D887A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3170C671CAFC61500D887A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +148,9 @@
 		7594A0811CB770A3000D6DD3 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				7594A0A31CB79416000D6DD3 /* Global */,
 				7594A0821CB770FB000D6DD3 /* BaseTableBarController.swift */,
+				7594A0A11CB793A8000D6DD3 /* wechatApplicationManager.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -157,6 +162,14 @@
 				7594A0861CB78D1D000D6DD3 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		7594A0A31CB79416000D6DD3 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				7594A0A41CB7946D000D6DD3 /* wechat-Bridging-Header.h */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 		A3170C591CAFC61500D887A4 = {
@@ -276,7 +289,7 @@
 				KnownAssetTags = (
 					New,
 				);
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = tencent;
 				TargetAttributes = {
@@ -351,6 +364,7 @@
 			files = (
 				7594A0831CB770FB000D6DD3 /* BaseTableBarController.swift in Sources */,
 				7594A0131CB522CF000D6DD3 /* MessagesViewController.swift in Sources */,
+				7594A0A21CB793A8000D6DD3 /* wechatApplicationManager.swift in Sources */,
 				7594A0111CB522A3000D6DD3 /* LoginViewController.swift in Sources */,
 				A3170C681CAFC61500D887A4 /* ViewController.swift in Sources */,
 				A3170C661CAFC61500D887A4 /* AppDelegate.swift in Sources */,
@@ -497,10 +511,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/wechat/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.prince.wechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wechat/class/Base/Global/wechat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -508,10 +525,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/wechat/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.prince.wechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "wechat/class/Base/Global/wechat-Bridging-Header.h";
 			};
 			name = Release;
 		};

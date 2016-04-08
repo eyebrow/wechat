@@ -13,21 +13,18 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var tableBarViewController: BaseTableBarController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-//        self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
-//        
-//        let view: UIViewController?
-//        
-//        var nav: UINavigationController?
-//        nav = UINavigationController.init(rootViewController: view!)
-//        
-//        self.window?.rootViewController
-//        self.window?.makeKeyAndVisible()
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window!.backgroundColor = UIColor.whiteColor()
+        self.tableBarViewController = BaseTableBarController()
+        self.window!.rootViewController = self.tableBarViewController
+        self.window!.makeKeyAndVisible()
         
+        wechatApplicationManager.applicationConfigInit()
         return true
     }
 
