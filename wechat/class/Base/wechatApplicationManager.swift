@@ -20,7 +20,7 @@ class wechatApplicationManager: NSObject {
      */
     static func initNavigationBar() {
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
-        UINavigationBar.appearance().barTintColor = UIColor(red: 0x1a, green: 0x1a, blue: 0x1a, alpha: 1)
+        UINavigationBar.appearance().barTintColor = UIColor(colorNamed: wechatColor.barTintColor)
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
         UINavigationBar.appearance().translucent = true
         let attributes = [

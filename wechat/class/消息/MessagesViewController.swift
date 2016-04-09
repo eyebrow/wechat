@@ -13,6 +13,6 @@ class MessagesViewController: UIViewController {
     override func loadView() {
         super.loadView()
         self.title = "消息"
-        self.view.backgroundColor = UIColor.blackColor()
+        self.view.backgroundColor = UIColor.grayColor()
     }
 }

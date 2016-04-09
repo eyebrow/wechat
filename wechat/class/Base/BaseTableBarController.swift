@@ -20,6 +20,20 @@ class BaseTableBarController: UITabBarController {
     func setup() {
         let titleArray:NSArray = ["消息","好友","发现","我"]
         
+        let normalImagesArray:NSArray = [
+            wechatAsert.Tabbar_mainframe.image,
+            wechatAsert.Tabbar_contacts.image,
+            wechatAsert.Tabbar_discover.image,
+            wechatAsert.Tabbar_me.image,
+        ]
+        
+        let selectedImagesArray:NSArray = [
+            wechatAsert.Tabbar_mainframeHL.image,
+            wechatAsert.Tabbar_contactsHL.image,
+            wechatAsert.Tabbar_discoverHL.image,
+            wechatAsert.Tabbar_meHL.image,
+        ]
+        
         let viewControllerArray = [MessagesViewController(),
                                    FriendsViewController(),
                                    NewMomentViewController(),
@@ -30,6 +44,11 @@ class BaseTableBarController: UITabBarController {
         for (index, controller) in viewControllerArray.enumerate() {
             
             controller.tabBarItem!.title = titleArray.objectAtIndex(index) as? String
+            
+            controller.tabBarItem!.image = normalImagesArray.objectAtIndex(index).imageWithRenderingMode(.AlwaysOriginal)
+            controller.tabBarItem!.selectedImage = selectedImagesArray.objectAtIndex(index).imageWithRenderingMode(.AlwaysOriginal)
+            controller.tabBarItem!.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.lightGrayColor()], forState: .Normal)
+            controller.tabBarItem!.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor(colorNamed: wechatColor.tabbarSelectedTextColor)], forState: .Selected)
             
             let navigationController = UINavigationController(rootViewController: controller)
             

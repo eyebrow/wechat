@@ -10,4 +10,9 @@ import UIKit
 
 class MyPageViewController: UIViewController {
 
+    override func loadView() {
+        super.loadView()
+        self.title = "我"
+        self.view.backgroundColor = UIColor.grayColor()
+    }
 }

@@ -10,4 +10,9 @@ import UIKit
 
 class NewMomentViewController: UIViewController {
 
+    override func loadView() {
+        super.loadView()
+        self.title = "动态"
+        self.view.backgroundColor = UIColor.grayColor()
+    }
 }
