@@ -24,6 +24,7 @@
 		A3D513841CB8C4F60077C509 /* UIImage+wechat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D513831CB8C4F60077C509 /* UIImage+wechat.swift */; };
 		A3E802751CB92AF8000C7FEB /* UIColor+wechat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E802741CB92AF8000C7FEB /* UIColor+wechat.swift */; };
 		A3E802791CB93458000C7FEB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3E802771CB93458000C7FEB /* Info.plist */; };
+		A3FEA7701CB9EE8100C6EC4D /* UINavigationItem+wechat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FEA76F1CB9EE8100C6EC4D /* UINavigationItem+wechat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		A3E802741CB92AF8000C7FEB /* UIColor+wechat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+wechat.swift"; sourceTree = "<group>"; };
 		A3E802771CB93458000C7FEB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3E802781CB93458000C7FEB /* wechat-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "wechat-Bridging-Header.h"; sourceTree = "<group>"; };
+		A3FEA76F1CB9EE8100C6EC4D /* UINavigationItem+wechat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+wechat.swift"; sourceTree = "<group>"; };
+		A3FEA7711CB9F46600C6EC4D /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		E15FD0CF10CA5F246DDF924F /* Pods-wechat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wechat.release.xcconfig"; path = "Pods/Target Support Files/Pods-wechat/Pods-wechat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,6 +194,7 @@
 			children = (
 				A3D513831CB8C4F60077C509 /* UIImage+wechat.swift */,
 				A3E802741CB92AF8000C7FEB /* UIColor+wechat.swift */,
+				A3FEA76F1CB9EE8100C6EC4D /* UINavigationItem+wechat.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -252,6 +256,7 @@
 			children = (
 				A3E802771CB93458000C7FEB /* Info.plist */,
 				A3E802781CB93458000C7FEB /* wechat-Bridging-Header.h */,
+				A3FEA7711CB9F46600C6EC4D /* MyPlayground.playground */,
 			);
 			path = "Supportting Files";
 			sourceTree = "<group>";
@@ -444,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FEA7701CB9EE8100C6EC4D /* UINavigationItem+wechat.swift in Sources */,
 				7594A0831CB770FB000D6DD3 /* BaseTableBarController.swift in Sources */,
 				7594A0131CB522CF000D6DD3 /* MessagesViewController.swift in Sources */,
 				7594A0A21CB793A8000D6DD3 /* wechatApplicationManager.swift in Sources */,
@@ -526,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -564,7 +570,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

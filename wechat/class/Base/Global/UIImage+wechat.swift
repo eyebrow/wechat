@@ -25,6 +25,8 @@ extension UIImage{
         case Tabbar_meHL = "tabbar_meHL"
         case TabbarBkg = "tabbarBkg"
         
+        case NavigationBae_Add = "barbuttonicon_add"
+        
         var image: UIImage {
             return UIImage(asert: self)
         }

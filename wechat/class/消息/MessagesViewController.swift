@@ -10,9 +10,15 @@ import UIKit
 
 class MessagesViewController: UIViewController {
 
-    override func loadView() {
-        super.loadView()
+    override func viewDidLoad() {
+        super.viewDidLoad()
         self.title = "消息"
-        self.view.backgroundColor = UIColor.grayColor()
+        self.view.backgroundColor = UIColor(colorNamed: wechatColor.viewBackgroundColor)
+        
+        self.navigationItem.rightButtonAction(wechatAsert.NavigationBae_Add.image) { (Void) -> Void in
+            
+            //点击操作的方法
+            print("点击 + ")
+        }
     }
 }
