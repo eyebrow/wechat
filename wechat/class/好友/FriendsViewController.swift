@@ -12,7 +12,7 @@ class FriendsViewController: UIViewController {
 
     override func loadView() {
         super.loadView()
-        self.title = "好友"
+        self.title = "通讯录"
         self.view.backgroundColor = UIColor.grayColor()
     }
 }

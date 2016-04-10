@@ -18,7 +18,7 @@ class BaseTableBarController: UITabBarController {
     }
     
     func setup() {
-        let titleArray:NSArray = ["消息","好友","发现","我"]
+        let titleArray:NSArray = ["消息","通讯录","发现","我"]
         
         let normalImagesArray:NSArray = [
             wechatAsert.Tabbar_mainframe.image,

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0836174CD8ED8D82E137BD44 /* Pods_wechat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC46F346B44E30AD3A126F9 /* Pods_wechat.framework */; };
 		7594A0111CB522A3000D6DD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A0101CB522A3000D6DD3 /* LoginViewController.swift */; };
-		7594A0131CB522CF000D6DD3 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A0121CB522CF000D6DD3 /* MessagesViewController.swift */; };
 		7594A0151CB522E2000D6DD3 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A0141CB522E2000D6DD3 /* FriendsViewController.swift */; };
 		7594A0171CB522F9000D6DD3 /* NewMomentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A0161CB522F9000D6DD3 /* NewMomentViewController.swift */; };
 		7594A0191CB52315000D6DD3 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7594A0181CB52315000D6DD3 /* MyPageViewController.swift */; };
@@ -20,7 +19,10 @@
 		A3170C6E1CAFC61500D887A4 /* wechat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3170C6C1CAFC61500D887A4 /* wechat.xcdatamodeld */; };
 		A3170C7E1CAFC61500D887A4 /* wechatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3170C7D1CAFC61500D887A4 /* wechatTests.swift */; };
 		A3170C891CAFC61500D887A4 /* wechatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3170C881CAFC61500D887A4 /* wechatUITests.swift */; };
-		A325AAFB1CBA55350098F6D6 /* wechatBottomTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A325AAFA1CBA55350098F6D6 /* wechatBottomTipsView.swift */; };
+		A3183A1B1CBA9C1200B9FC6C /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3183A1A1CBA9C1200B9FC6C /* MessagesViewController.swift */; };
+		A3183A1E1CBA9C1C00B9FC6C /* wechatBottomTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3183A1D1CBA9C1C00B9FC6C /* wechatBottomTipsView.swift */; };
+		A3183A211CBA9C6A00B9FC6C /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3183A201CBA9C6A00B9FC6C /* MessageModel.swift */; };
+		A3183A231CBA9FC100B9FC6C /* wechatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3183A221CBA9FC100B9FC6C /* wechatModel.swift */; };
 		A3D513821CB8C1E50077C509 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D513811CB8C1E50077C509 /* Media.xcassets */; };
 		A3D513841CB8C4F60077C509 /* UIImage+wechat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D513831CB8C4F60077C509 /* UIImage+wechat.swift */; };
 		A3E802751CB92AF8000C7FEB /* UIColor+wechat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E802741CB92AF8000C7FEB /* UIColor+wechat.swift */; };
@@ -49,7 +51,6 @@
 		2FC46F346B44E30AD3A126F9 /* Pods_wechat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wechat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C65EF1EBC7EE663BB346514 /* Pods-wechat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wechat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wechat/Pods-wechat.debug.xcconfig"; sourceTree = "<group>"; };
 		7594A0101CB522A3000D6DD3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		7594A0121CB522CF000D6DD3 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		7594A0141CB522E2000D6DD3 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		7594A0161CB522F9000D6DD3 /* NewMomentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMomentViewController.swift; sourceTree = "<group>"; };
 		7594A0181CB52315000D6DD3 /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +66,10 @@
 		A3170C841CAFC61500D887A4 /* wechatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wechatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3170C881CAFC61500D887A4 /* wechatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wechatUITests.swift; sourceTree = "<group>"; };
 		A3170C8A1CAFC61500D887A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A325AAFA1CBA55350098F6D6 /* wechatBottomTipsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wechatBottomTipsView.swift; sourceTree = "<group>"; };
+		A3183A1A1CBA9C1200B9FC6C /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		A3183A1D1CBA9C1C00B9FC6C /* wechatBottomTipsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wechatBottomTipsView.swift; sourceTree = "<group>"; };
+		A3183A201CBA9C6A00B9FC6C /* MessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
+		A3183A221CBA9FC100B9FC6C /* wechatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wechatModel.swift; sourceTree = "<group>"; };
 		A3D513811CB8C1E50077C509 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		A3D513831CB8C4F60077C509 /* UIImage+wechat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+wechat.swift"; sourceTree = "<group>"; };
 		A3E802741CB92AF8000C7FEB /* UIColor+wechat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+wechat.swift"; sourceTree = "<group>"; };
@@ -159,8 +163,9 @@
 		7594A00E1CB5226C000D6DD3 /* 消息 */ = {
 			isa = PBXGroup;
 			children = (
-				7594A0121CB522CF000D6DD3 /* MessagesViewController.swift */,
-				A325AAFA1CBA55350098F6D6 /* wechatBottomTipsView.swift */,
+				A3183A1F1CBA9C2400B9FC6C /* model */,
+				A3183A1C1CBA9C1C00B9FC6C /* view */,
+				A3183A191CBA9C1200B9FC6C /* controller */,
 			);
 			path = "消息";
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 				A3D513831CB8C4F60077C509 /* UIImage+wechat.swift */,
 				A3E802741CB92AF8000C7FEB /* UIColor+wechat.swift */,
 				A3FEA76F1CB9EE8100C6EC4D /* UINavigationItem+wechat.swift */,
+				A3183A221CBA9FC100B9FC6C /* wechatModel.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -252,6 +258,30 @@
 				A3170C8A1CAFC61500D887A4 /* Info.plist */,
 			);
 			path = wechatUITests;
+			sourceTree = "<group>";
+		};
+		A3183A191CBA9C1200B9FC6C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3183A1A1CBA9C1200B9FC6C /* MessagesViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		A3183A1C1CBA9C1C00B9FC6C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A3183A1D1CBA9C1C00B9FC6C /* wechatBottomTipsView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		A3183A1F1CBA9C2400B9FC6C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A3183A201CBA9C6A00B9FC6C /* MessageModel.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		A3E802761CB933B2000C7FEB /* Supportting Files */ = {
@@ -454,17 +484,19 @@
 			files = (
 				A3FEA7701CB9EE8100C6EC4D /* UINavigationItem+wechat.swift in Sources */,
 				7594A0831CB770FB000D6DD3 /* BaseTableBarController.swift in Sources */,
-				7594A0131CB522CF000D6DD3 /* MessagesViewController.swift in Sources */,
 				7594A0A21CB793A8000D6DD3 /* wechatApplicationManager.swift in Sources */,
 				7594A0111CB522A3000D6DD3 /* LoginViewController.swift in Sources */,
 				A3D513841CB8C4F60077C509 /* UIImage+wechat.swift in Sources */,
 				A3170C661CAFC61500D887A4 /* AppDelegate.swift in Sources */,
 				A3E802751CB92AF8000C7FEB /* UIColor+wechat.swift in Sources */,
+				A3183A1B1CBA9C1200B9FC6C /* MessagesViewController.swift in Sources */,
+				A3183A231CBA9FC100B9FC6C /* wechatModel.swift in Sources */,
 				7594A0151CB522E2000D6DD3 /* FriendsViewController.swift in Sources */,
+				A3183A211CBA9C6A00B9FC6C /* MessageModel.swift in Sources */,
 				7594A0171CB522F9000D6DD3 /* NewMomentViewController.swift in Sources */,
 				A3170C6E1CAFC61500D887A4 /* wechat.xcdatamodeld in Sources */,
+				A3183A1E1CBA9C1C00B9FC6C /* wechatBottomTipsView.swift in Sources */,
 				7594A0191CB52315000D6DD3 /* MyPageViewController.swift in Sources */,
-				A325AAFB1CBA55350098F6D6 /* wechatBottomTipsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
