@@ -20,6 +20,7 @@
 		A3170C6E1CAFC61500D887A4 /* wechat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3170C6C1CAFC61500D887A4 /* wechat.xcdatamodeld */; };
 		A3170C7E1CAFC61500D887A4 /* wechatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3170C7D1CAFC61500D887A4 /* wechatTests.swift */; };
 		A3170C891CAFC61500D887A4 /* wechatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3170C881CAFC61500D887A4 /* wechatUITests.swift */; };
+		A325AAFB1CBA55350098F6D6 /* wechatBottomTipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A325AAFA1CBA55350098F6D6 /* wechatBottomTipsView.swift */; };
 		A3D513821CB8C1E50077C509 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D513811CB8C1E50077C509 /* Media.xcassets */; };
 		A3D513841CB8C4F60077C509 /* UIImage+wechat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D513831CB8C4F60077C509 /* UIImage+wechat.swift */; };
 		A3E802751CB92AF8000C7FEB /* UIColor+wechat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E802741CB92AF8000C7FEB /* UIColor+wechat.swift */; };
@@ -64,6 +65,7 @@
 		A3170C841CAFC61500D887A4 /* wechatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wechatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3170C881CAFC61500D887A4 /* wechatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wechatUITests.swift; sourceTree = "<group>"; };
 		A3170C8A1CAFC61500D887A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A325AAFA1CBA55350098F6D6 /* wechatBottomTipsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wechatBottomTipsView.swift; sourceTree = "<group>"; };
 		A3D513811CB8C1E50077C509 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		A3D513831CB8C4F60077C509 /* UIImage+wechat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+wechat.swift"; sourceTree = "<group>"; };
 		A3E802741CB92AF8000C7FEB /* UIColor+wechat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+wechat.swift"; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				7594A0121CB522CF000D6DD3 /* MessagesViewController.swift */,
+				A325AAFA1CBA55350098F6D6 /* wechatBottomTipsView.swift */,
 			);
 			path = "消息";
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				7594A0171CB522F9000D6DD3 /* NewMomentViewController.swift in Sources */,
 				A3170C6E1CAFC61500D887A4 /* wechat.xcdatamodeld in Sources */,
 				7594A0191CB52315000D6DD3 /* MyPageViewController.swift in Sources */,
+				A325AAFB1CBA55350098F6D6 /* wechatBottomTipsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,7 +595,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "wechat/Supportting Files/wechat-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT}";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT} $(inherited)";
 			};
 			name = Debug;
 		};
@@ -608,7 +612,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.prince.wechat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "wechat/Supportting Files/wechat-Bridging-Header.h";
-				USER_HEADER_SEARCH_PATHS = "${SRCROOT}";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT} $(inherited)";
 			};
 			name = Release;
 		};

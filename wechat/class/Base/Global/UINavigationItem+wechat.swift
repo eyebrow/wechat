@@ -20,9 +20,17 @@ extension UINavigationItem {
         button.imageView?.contentMode = .ScaleAspectFit
         button.contentHorizontalAlignment = .Right
         
-        //点击回调
+        //点击回调 - 两种写法
+// 1.
+//        button.wechat_addAction(forControlEvents: .TouchUpInside, withcallback: {
+//            handler()
+//        })
+//
         
-        
+// 2.
+        button.wechat_addAction(forControlEvents: .TouchUpInside) { (Void) -> Void in
+            handler()
+        }
         //添加到right
         let barItem = UIBarButtonItem(customView: button)
         let gapItem = UIBarButtonItem(barButtonSystemItem: .FixedSpace, target: nil, action: nil)
@@ -31,6 +39,8 @@ extension UINavigationItem {
     }
     
 }
+
+// MARK: - @block of envent control
 
 public class ClosureWrapper:NSObject{
     
@@ -46,7 +56,14 @@ public class ClosureWrapper:NSObject{
     
 }
 
+var AssociatedClosure:UInt8 = 0
+
 extension UIControl{
     
-    
+    private func wechat_addAction(forControlEvents events:UIControlEvents,withcallback caback:(Void) -> Void){
+        let wapper = ClosureWrapper(callBack: caback)
+        addTarget(wapper, action: #selector(ClosureWrapper.invork), forControlEvents: events)
+        
+        objc_setAssociatedObject(self, &AssociatedClosure, wapper, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+    }
 }
