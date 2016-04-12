@@ -11,6 +11,17 @@ import UIKit
 class MessagesViewController: UIViewController{
 
     var bottomTipsView : wechatBottomTipsView!
+    private var tableView:UITableView!
+    private var dataSource = [MessageModel]()
+    
+    override func loadView() {
+        super.loadView()
+        self.tableView = UITableView()
+        self.tableView.frame = self.view.bounds
+        self.tableView.estimatedRowHeight = 65
+        
+        self.view.addSubview(self.tableView)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +50,33 @@ class MessagesViewController: UIViewController{
         self.bottomTipsView.hide(true)
     }
 
+}
+
+extension MessagesViewController:UITableViewDelegate{
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
+}
+
+extension MessagesViewController:UITableViewDataSource{
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.dataSource.count
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return self.tableView.estimatedRowHeight
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("MessageTableViewCell", forIndexPath: indexPath) as! MessageTableViewCell
+        
+        cell .setContent(MessageModel: self.dataSource.get(indexPath.row))
+        
+        return cell
+    }
 }
 
 extension MessagesViewController:wechatBottimTipsViewDelegate{
